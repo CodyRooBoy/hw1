@@ -41,7 +41,7 @@ def test_optimal_stopping(distribution_type, stopping_point_range, num_trials):
     return optimal_stopping_point
 
 stopping_point_range = np.arange(0.1, 0.60, 0.01)
-num_trials = 1000
+num_trials = 10000
 
 print(f"Optimal stopping point for uniform distribution: {test_optimal_stopping('uniform', stopping_point_range, num_trials)}")
 print(f"Optimal stopping point for normal distribution: {test_optimal_stopping('normal', stopping_point_range, num_trials)}")
